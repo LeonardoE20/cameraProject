@@ -19,8 +19,7 @@
 var app = {
 	// Application Constructor
 	initialize: function() {
-		document.getElementById("btn").addEventListener('click', app.takePhoto)
-		);
+		document.getElementById("btn").addEventListener("click", app.takePhoto);
 	},
 
 	// deviceready Event Handler
@@ -28,13 +27,13 @@ var app = {
 	// Bind any cordova events here. Common events are:
 	// 'pause', 'resume', etc.
 	onDeviceReady: function() {
-		this.receivedEvent('deviceready');
-	}
+		this.receivedEvent("deviceready");
+	},
 
-  // take a picture!
-  takePhoto: function() {
-    console.log("Button Clicked")
-  }
+	// take a picture!
+	takePhoto: function() {
+		console.log("Button Clicked");
+	}
 };
 
 app.initialize();
